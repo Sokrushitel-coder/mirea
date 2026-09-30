@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1695828708 source:c:\users\Роман\desktop\мирэа\сиаод 2 семестр\сиаод 2 практа 16 варик\main.cpp
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<string.h>
+	<cmath>
+	<time.h>
+
