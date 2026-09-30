@@ -1,0 +1,7 @@
+a,b: integer;
+c : boolean;
+
+input(a b c)
+{let a = a plus 2 plus 10e10; let b = b plus 1}
+if c then output(a plus b) else output(a minus b)
+end

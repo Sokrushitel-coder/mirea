@@ -1,0 +1,43 @@
+PROG -> ((DEF|OPER)(:|endl))+ end
+DEF -> (ID (, ID)*:TYPE;)*
+TYPE -> integer | real | boolean
+OPER -> COMB|ASGN|COND|FCL|CCL|IN|OUT
+COMB -> "{"OPER(;OPER)*"}"
+ASGN -> (let)? ID = EXPR
+COND -> if EXPR then OPER (else OPER)? end_else
+FCL -> for "("(EXPR)?;(EXPR)?;(EXPR)?")" OPER
+CCL -> do while EXPR OPER loop
+IN -> input "("ID( ID)*")"
+OUT -> output "("EXPR( EXPR)*")"
+EXPR -> OPRD (OPAT OPRD)*
+OPRD -> SM (OPSM SM)*
+SM -> ML (OPML ML)*
+ML -> ID|NUM|LCST|OPUN ML|"("EXPR")"
+
+
+NUM -> INT|REAL
+LCST -> true|false
+ID -> CHAR (CHAR|DIGIT)*
+CHAR -> [A-z]
+DIGIT -> [0-9]
+INT -> BIN|OCT|DEC|HEX
+BIN -> (0|1)+(B|b)
+OCT -> [0-7]+(O|o)
+DEC -> DIGIT*(D|d)?
+HEX -> DIGIT (DIGIT|[A-F]|[a-f])*(H|h)
+REAL -> INT_STR EXP|(INT_STR)?.INT_STR(EXP)?
+INT_STR -> DIGIT+
+EXP -> (E|e)(+|-)?INT_STR
+OPAT -> NE|EQ|LT|LE|GT|GE
+OPSM -> plus|min|or
+OPML -> mult|div|and
+OPUN -> ~
+
+OPAT OPSM OPML OPUN INT REAL ID
+OPAT = {"NE", "EQ", "LT", "LE", "GT", "GE"}
+OPSM = {"plus", "minus", "or"}
+OPML = {"mult", "div", "and"}
+logic_const = {"true", "false"}
+types = {"integer", "real", "boolean"}
+key_words = {"end", "let", "if", "then", "else", "for", "do", "while", "input", "output"}
+end_else = "end_else"

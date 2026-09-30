@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1703171224 source:c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\src\lexic_analyzer.cpp
+	"lexic_analyzer.h"
+
+1703074877 c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\include\lexic_analyzer.h
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<set>
+	<exception>
+
+1703081418 source:c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\src\syntax_analyzer.cpp
+	"syntax_analyzer.h"
+	<iostream>
+	<exception>
+
+1703074927 c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\include\syntax_analyzer.h
+	<vector>
+	<string>
+	<set>
+
+1703168213 source:c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\main.cpp
+	<iostream>
+	"C:\Users\ho6oT\Documents\לטנ‎א\עפÿ\1234\src\lexic_analyzer.h"
+	"C:\Users\ho6oT\Documents\לטנ‎א\עפÿ\1234\src\syntax_analyzer.h"
+
+1703074877 c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\src\lexic_analyzer.h
+	<iostream>
+	<vector>
+	<string>
+	<fstream>
+	<set>
+	<exception>
+
+1703074927 c:\users\ho6ot\documents\לטנ‎א\עפÿ\1234\src\syntax_analyzer.h
+	<vector>
+	<string>
+	<set>
+
