@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1680000867 source:c:\users\Роман\desktop\практы\код челику\сиаод 4 задание 9 варик\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

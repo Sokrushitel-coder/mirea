@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685440506 source:c:\users\Роман\desktop\практы\код челику\мое 5 задание\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

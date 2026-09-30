@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1684505613 source:c:\users\Роман\desktop\практы\код челику\сиаод 10 задание 15 варик\main.cpp
+	<iostream>
+	<regex>
+	<string>
+	<vector>
+
